@@ -1,0 +1,1 @@
+Implementimi i One time pad duke gjeneruar nje key stream nga nje int32 ose string seed. Implementimi i SymmetricAlgorithm qe ofron enkriptues dhe dekriptues per kete algoritem.
