@@ -9,3 +9,5 @@ class OTPAlgorithm:
         ks = generate_keystream(len(plaintext.encode('utf-8')), self.seed)
         cipher = OTPCipher(ks)
         return cipher.encrypt(plaintext)
+    
+    

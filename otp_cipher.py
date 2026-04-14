@@ -1,6 +1,5 @@
 class OTPCipher:
    
-
     def __init__(self, keystream):
         
         self.keystream = keystream
@@ -33,18 +32,3 @@ class OTPCipher:
         return decrypted_bytes.decode('utf-8')
 
 
-if __name__ == "__main__":
-    
-    keystream = [12, 45, 78, 23, 56, 89, 90, 123, 11, 22, 33, 44]
-
-    otp = OTPCipher(keystream)
-
-    message = "Pershendetje"
-
-    print("Mesazhi origjinal:", message)
-
-    encrypted = otp.encrypt(message)
-    print("Encrypted:", encrypted)
-
-    decrypted = otp.decrypt(encrypted)
-    print("Decrypted:", decrypted)
