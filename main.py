@@ -1,9 +1,9 @@
 from otp_algorithm import OTPAlgorithm
 
-algo = OTPAlgorithm("mysecretseed")
+otpa = OTPAlgorithm("rrjetatkompjuterike")
 
-enc = algo.encrypt("Pershendetje")
+enc = otpa.encrypt("Pershendetje")
 print(enc)
 
-dec = algo.decrypt(enc)
+dec = otpa.decrypt(enc)
 print(dec)
