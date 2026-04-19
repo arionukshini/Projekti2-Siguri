@@ -3,7 +3,7 @@ from otp_algorithm import OTPAlgorithm
 otpa = OTPAlgorithm("rrjetatkompjuterike")
 
 enc = otpa.encrypt("Ky eshte implementimi i algoritmit One Time Pad ne Python.")
-print(enc)
+print("Encrypted: ", enc)
 
 dec = otpa.decrypt(enc)
-print(dec)
+print("Decrypted: ", dec)
